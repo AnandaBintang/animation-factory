@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Baloo 2";
   src: url("../font/Baloo2-Medium.woff2") format("woff2"),
     url("../font/Baloo2-Medium.woff") format("woff");
@@ -41,7 +41,7 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 :root {
   --bc: #fcffff;
@@ -55,12 +55,12 @@
   --black: #000000;
   /* Sizes */
   --heading: 3.4rem;
-  --heading-large: 7.5rem;
+  --heading-large: 5.5rem;
   --heading-medium: 2rem;
   --paragraph: 1.1rem;
   /* Fonts */
-  --font-main: "Poppins";
-  --font-title: "Baloo 2", serif;
+  --font-main: "Wix Madefor Display";
+  --font-title: "Wix Madefor Display";
 }
 * {
   user-select: none;
@@ -237,48 +237,89 @@ h1 {
 /* Header */
 #header {
   width: 100%;
-  height: 100vh;
+  height: auto;
   position: relative;
   overflow: hidden;
+  background-color: var(--pink);
 }
 .header-wrapper {
-  margin-top: 30rem;
-  width: 65%;
+  margin: 10rem 0;
+  width: 70%;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
+.header-image {
+  width: 10%;
+}
 .header-title {
-  color: var(--white);
-  font-weight: 700;
+  width: 65%;
+  color: var(--black);
+  font-weight: 800;
   font-family: var(--font-title);
-  text-transform: uppercase;
   text-orientation: upright;
-  text-align: center;
   font-size: var(--heading-large);
   z-index: 4;
 }
-.header-circle {
-  width: 9rem;
-  height: 9rem;
-  border: 1px solid var(--white);
-  background-color: transparent;
-  border-radius: 50%;
-  margin: 5rem auto;
-  transition: all 0.5s;
-}
-.header-circle:hover {
-  background-color: var(--white);
-}
-.header-circle:hover > .header-discover h3 {
-  color: var(--black);
-}
-.header-discover h3 {
-  color: var(--white);
-  text-align: center;
+.btn-header__discover {
+  color: var(--orange);
   font-size: 1rem;
-  margin: 3rem 1rem 0 1rem;
-  transition: all 0.5s;
+  font-style: var(--font-main);
+  font-weight: 600;
+  border: 0;
+  padding: 0.7rem 1rem;
+  background-color: var(--black);
+}
+/* About */
+#about {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--orange);
+  background-image: url(../img/cross-backgroud.svg);
+  background-blend-mode: hard-light;
+}
+.about-wrapper {
+  margin: 7rem 0;
+  width: 70%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.about-title {
+  width: 65%;
+  color: var(--black);
+  font-weight: 800;
+  font-family: var(--font-title);
+  text-orientation: upright;
+  font-size: var(--heading);
+  z-index: 4;
+}
+.about-text {
+  width: 50%;
+  color: var(--black);
+  font-weight: 600;
+  font-family: var(--font-title);
+  text-orientation: upright;
+  font-size: var(--heading-medium);
+  line-height: 3rem;
+  z-index: 4;
+}
+/* Work */
+#work {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--green);
+}
+.work-wrapper {
+  width: 70%;
+  margin: 7rem 0;
+}
+.work-wrapper img {
+  mix-blend-mode: luminosity;
 }
 
 /* Menu */
@@ -470,9 +511,20 @@ h1 {
   }
   /* Header */
   .header-title {
-    font-size: calc(var(--heading-large) - 3.75rem);
+    font-size: calc(var(--heading-large) - 2.5rem);
+  }
+  .header-text {
+    width: 100%;
+    margin: 1rem auto;
   }
   .header-wrapper {
+    width: 90%;
+  }
+  /* About */
+  .about-wrapper {
+    width: 90%;
+  }
+  .about-text {
     width: 90%;
   }
   /* Menu */
@@ -497,7 +549,7 @@ h1 {
     z-index: 54;
   }
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
   :root {
     /* Sizes */
     --heading: 2.2rem;
@@ -508,10 +560,12 @@ h1 {
   }
   /* Header */
   .header-title {
-    font-size: calc(var(--heading-large) - 4rem);
+    font-size: calc(var(--heading-large) - 2.5rem);
   }
-  .header-wrapper {
-    width: 100%;
+  /* About */
+  .about-text {
+    font-size: calc(var(--heading-medium) - 0.5rem);
+    line-height: 2rem;
   }
   /* Menu */
   .menu {
@@ -541,8 +595,31 @@ h1 {
     display: none;
   }
   /* Header */
+  .header-wrapper {
+    width: 80%;
+  }
+  .header-image {
+    width: 30%;
+  }
   .header-title {
-    font-size: calc(var(--heading-large) - 4.5rem);
+    width: 90%;
+    font-size: calc(var(--heading-large) - 3.5rem);
+  }
+  .btn-header__discover {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.7rem;
+  }
+  /* About */
+  .about-wrapper {
+    width: 80%;
+  }
+  .about-title {
+    width: 90%;
+  }
+  .about-text {
+    width: 90%;
+    font-size: var(--paragraph);
+    line-height: 1.5rem;
   }
 }
 @media only screen and (max-width: 496px) {
