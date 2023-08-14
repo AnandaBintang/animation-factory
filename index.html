@@ -11,6 +11,7 @@
       type="image/x-icon"
     />
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,8 +19,21 @@
       rel="stylesheet"
     />
 
+    <!-- Styling Framework -->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css.map" />
+
+    <!-- Plugins -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+      integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/app.css" />
   </head>
   <body>
@@ -101,12 +115,14 @@
         <div class="row">
           <div class="col-md-6 mb-4 mb-lg-0">
             <img
+              data-aos="fade-up"
               src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1466&q=80"
-              class="w-100 shadow-1-strong mb-4"
+              class="w-100 shadow-1-strong ` mb-4"
               alt="Boat on Calm Water"
             />
 
             <img
+              data-aos="fade-up"
               src="https://images.unsplash.com/photo-1598810132152-e70c939a1dfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"
               class="w-100 shadow-1-strong mb-4"
               alt="Wintry Mountain Landscape"
@@ -115,12 +131,14 @@
 
           <div class="col-md-6 mb-4 mb-lg-0">
             <img
+              data-aos="fade-up"
               src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"
               class="w-100 shadow-1-strong mb-4"
               alt="Mountains in the Clouds"
             />
 
             <img
+              data-aos="fade-up"
               src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
               class="w-100 shadow-1-strong mb-4"
               alt="Boat on Calm Water"
@@ -130,12 +148,101 @@
         <!-- Gallery -->
       </div>
     </section>
+    <section id="studio" class="flexbox">
+      <div class="studio-wrapper">
+        <div class="grid">
+          <div>
+            <img src="./assets/img/studio/skybox.png" alt="Skybox" />
+          </div>
+          <div>
+            <img src="./assets/img/studio/skybox.png" alt="Skybox" />
+          </div>
+          <div>
+            <img src="./assets/img/studio/skybox.png" alt="Skybox" />
+          </div>
+          <div>
+            <img src="./assets/img/studio/skybox.png" alt="Skybox" />
+          </div>
+          <div>
+            <img src="./assets/img/studio/skybox.png" alt="Skybox" />
+          </div>
+          <div>
+            <img src="./assets/img/studio/skybox.png" alt="Skybox" />
+          </div>
+          <div>
+            <img src="./assets/img/studio/skybox.png" alt="Skybox" />
+          </div>
+          <div>
+            <img src="./assets/img/studio/skybox.png" alt="Skybox" />
+          </div>
+          <div>
+            <img src="./assets/img/studio/skybox.png" alt="Skybox" />
+          </div>
+          <div>
+            <img src="./assets/img/studio/skybox.png" alt="Skybox" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="client" class="flexbox">
+      <div class="client-wrapper">
+        <div class="row my-3">
+          <div data-aos="flip-left" class="col-lg-9 col-md-12 col-12 my-3">
+            <div class="cards d-flex justify-content-center align-items-center">
+              <div class="square"></div>
+              <h1 class="title">Test</h1>
+            </div>
+          </div>
+          <div data-aos="flip-right" class="col-lg-3 col-md-6 col-12 my-3">
+            <div class="cards d-flex justify-content-center align-items-center">
+              <div class="square"></div>
+              <h1 class="title">Test</h1>
+            </div>
+          </div>
+          <div data-aos="flip-left" class="col-lg-3 col-md-6 col-12 my-3">
+            <div class="cards d-flex justify-content-center align-items-center">
+              <div class="square"></div>
+              <h1 class="title">Test</h1>
+            </div>
+          </div>
+          <div data-aos="flip-right" class="col-lg-9 col-md-12 col-12 my-3">
+            <div class="cards d-flex justify-content-center align-items-center">
+              <div class="square"></div>
+              <h1 class="title">Test</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="row">
+          <div
+            class="d-flex justify-content-center align-items-center col-12 social-media my-3"
+          >
+            <a href="#"><i class="bi bi-twitter mx-3"></i></a>
+            <a href="#"><i class="bi bi-instagram mx-3"></i></a>
+            <a href="#"><i class="bi bi-facebook mx-3"></i></a>
+            <a href="#"><i class="bi bi-youtube mx-3"></i></a>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center col-12 copyright my-3"
+          >
+            <span>&copy;Animation Factory 2023</span>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/plugins/jquery.js"></script>
     <script src="assets/js/plugins/jquery-ui.js"></script>
     <script src="assets/js/plugins/bootstrap.bundle.min.js"></script>
     <script src="assets/js/plugins/bootstrap.bundle.min.js.map"></script>
     <script src="assets/js/function.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

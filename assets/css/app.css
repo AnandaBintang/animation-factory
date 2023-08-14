@@ -321,7 +321,114 @@ h1 {
 .work-wrapper img {
   mix-blend-mode: luminosity;
 }
-
+/* Studio */
+#studio {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--primary);
+  background-image: url(../img/cross-backgroud.svg);
+  background-blend-mode: luminosity;
+}
+.studio-wrapper {
+  width: 70%;
+  margin: 7rem 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 0.01rem;
+}
+.grid > div {
+  background: transparent;
+  border: 1px solid rgb(173, 173, 173);
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+}
+.grid > div::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  grid-area: 1/1/2/2;
+}
+.grid > div img {
+  width: 75%;
+  filter: grayscale(100%);
+  grid-area: 1/1/2/2;
+  transition: all 0.5s;
+}
+.grid > div img:hover {
+  scale: 1.2;
+  filter: grayscale(0%);
+}
+/* Client */
+#client {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--orange);
+}
+.client-wrapper {
+  width: 70%;
+  margin: 7rem 0;
+}
+.cards {
+  display: block;
+  width: 100%;
+  height: 320px;
+  background-color: #fc7114;
+}
+.square {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.3;
+  background-color: transparent;
+  background-image: radial-gradient(
+      circle at center center,
+      rgb(39, 125, 161),
+      rgb(249, 132, 74)
+    ),
+    repeating-radial-gradient(
+      circle at center center,
+      rgb(39, 125, 161),
+      rgb(39, 125, 161),
+      10px,
+      transparent 20px,
+      transparent 10px
+    );
+  background-blend-mode: multiply;
+  z-index: 1;
+  position: relative;
+}
+.cards .title {
+  z-index: 2;
+  position: absolute;
+}
+/* Footer */
+footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--black);
+}
+.footer-wrapper {
+  width: 100%;
+  margin: 5rem 0;
+}
+.social-media a {
+  color: var(--orange);
+  font-size: 2rem;
+}
+.copyright span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--orange);
+}
 /* Menu */
 .menu-wrapper {
   top: 0;
@@ -527,6 +634,14 @@ h1 {
   .about-text {
     width: 90%;
   }
+  /* Work */
+  .work-wrapper {
+    width: 90%;
+  }
+  /* Client */
+  .client-wrapper {
+    width: 90%;
+  }
   /* Menu */
   .menu {
     width: calc(85% - 5em);
@@ -620,6 +735,14 @@ h1 {
     width: 90%;
     font-size: var(--paragraph);
     line-height: 1.5rem;
+  }
+  /* Work */
+  .work-wrapper {
+    width: 80%;
+  }
+  /* Client */
+  .client-wrapper {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 496px) {
