@@ -343,6 +343,13 @@ h1 {
   width: 70%;
   margin: 7rem 0;
 }
+.studio-title {
+  color: var(--white);
+  font-weight: 600;
+  font-size: var(--heading);
+  text-align: center;
+  margin: 0 0 3rem 0;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
